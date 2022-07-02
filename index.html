@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solettificio</title>
+    <link rel="stylesheet" href="./style.css">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+		
+
+            <div class="toggleMenu" onclick="menuToggle();"></div> 
+            <ul class="navigation">
+                 <ul id="menu">
+                <li><a href="#sezioneA" class="btn">Home</a></li>
+                <li><a href="#sezioneA" class="btn">Prodotti</a></li>
+				<li><a href="#sezioneB" class="btn">Contatti</a></li>
+	           </ul>
+             </ul>   
+        </header>
+        <div class="content">
+            <div class="textbox">
+		<h2>Solettificio Colangelo</h2>
+                <p> La nostra azienda nasce nel 1990 grazie alla passione che mio padre Luigi 
+                   ha coltivato  sin da piccolo. 
+                   Attualmente siamo una realtà a conduzione familiare e offriamo vari prodotti
+                   artigianali tra cui solette, borse, tracolle, cinture, scarpe.
+				   Realizziamo prodotti di prima qualità attraverso la materia 
+				   prima che ci viene fornita da aziende del nord italia ma in parte 
+				   collaboriamo anche con piccoli calzaturifici della nostra zona. 
+		           Teniamo molto alla realizzazione del prodotto dalla fase iniziale sino
+				   alla fase finale e soprattutto soddisfando tutte le esigenze del cliente.
+		           Nel 2019 abbiamo ricevuto  varie certificazioni di qualità da parte
+		           della nostra regione e continuiamo ogni giorno a impegnarci a creare nuove
+				   soluzioni adatte a soddisfare tutte le esigenze dei nostri clienti.
+                </p>
+				<br><br>
+				<br></br>
+             
+            </div>
+
+        <div class="imgbox">
+        <img src="./images/scarpa.jpg" class="scarpe">
+		</div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/scarpa.jpg" onclick="imgSlider('./images/scarpa.jpg');changeBgColor('#0062be')"></li>
+			<li><img src="./images/cintura.jpg" onclick="imgSlider('./images/cintura.jpg');changeBgColor('#e60c2c')"></li>   
+			<li><img src="./images/tracolla.jpg" onclick="imgSlider('./images/tracolla.jpg');changeBgColor('#1e1e1e')"></li>
+            <li><img src="./images/soletta.jpg" onclick="imgSlider('./images/soletta.jpg');changeBgColor('#0062be')"></li>
+        </ul>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+        <ul class="sci">
+            <li><a href ="#"><img src="./images/facebook.png"></a></li>
+            <li><a href ="#"><img  src="./images/twitter.png"></a></li>
+            <li><a href ="#"><img  src="./images/instagram.png"></a></li>
+        </ul>
+		
+    </section>
+	
+	
+    <section id="sezioneB" class="grid">
+	<div class="content1">
+	<div class="textbox">
+	    <footer>
+            <section class="footer-widget-area footer-widget-area-bg">
+                <div class="container">
+                   <div class="row">
+                       <div class="col-md-12 col-sm-10 col-xs-10 text-center">
+                           <div class="">
+                            </div>
+							
+                           <p>
+                               <br>
+                               <strong>Solettificio Colangelo Snc</strong> - Via Roma n.23 Matera (MT)
+                               <br>
+                               Tel.011111111</a> - Email:info@sisisisisi.it</a>
+                               <br>
+                           </p>
+						   
+
+                <div class="row">
+
+                    <div class="col-sm-12 wow fadeInLeft">
+
+                        <div class="contact-form-block">
+
+                            <h2 class="contact-title">Inviaci un messaggio</h2>
+
+                            <form role="form" action="invioemailcontatti.php" method="post" id="contact-form">
+                                <input type="hidden" name="gnv-google-captcha-v3" value=""/>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="nomecognome" name="nomecognome" placeholder="Nome e Cognome *" data-msg="Inserisci il tuo Nome e Cognome" required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="azienda" name="azienda" placeholder="Azienda" data-msg="Inserisci la tua azienda"/>
+                                </div>
+                                <div class="form-group col-sm-6" style="padding-left:0px;">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email *" data-msg="Inserisci il tuo indirizzo email" required/>
+                                </div>
+                                <div class="form-group col-sm-6" style="padding-right:0px;">
+                                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono" data-msg="Inserisci il tuo numero di telefono" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" name="messaggio" id="messaggio" placeholder="Messaggio" data-msg="Inserisci il tuo messaggio" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="autorizzazione" id="autorizzazione" required style="vertical-align: top; display: inline-block; margin-top: 7px; width:20px;"> <span style="display: inline-block; width:calc(100% - 50px) !important;"> * Autorizzo il trattamento dei miei dati personali ai sensi del GDPR (Regolamento UE n. 2016/679) per i fini di ricevere le informazioni richieste.</span>
+                                </div>
+                                <div class="form-group">
+                                    <button type="" class="btn btn-custom">Invia Messaggio</button>
+                                </div>
+                            </form>
+                        </div> <!-- end .contact-form-block  -->
+                    </div> <!--  end col-sm-6  -->
+                    <div class="col-sm-6 wow fadeInRight">
+                    </div> <!--  end .col-md-4 col-sm-12 -->
+					</div> <!-- end row  -->
+                </div> <!-- end .container  -->
+            </section> <!--  end .footer-widget-area  -->
+        </footer>
+
+        <!-- END FOOTER  -->
+    </section>
+
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.scarpe').src = anything;
+    }
+    function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+		
+    }
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
+
